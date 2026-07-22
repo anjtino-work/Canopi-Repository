@@ -1,26 +1,232 @@
 [
-  { "title": "New Hire Onboarding & Equipment Setup SOP", "url": "knowledge-base/sops/new-hire-onboarding-sop.html", "keywords": "onboarding new hire equipment setup sop hr" },
-  { "title": "Hiring & Recruitment SOP", "url": "knowledge-base/sops/hiring-recruitment-sop.html", "keywords": "hiring recruitment interview sop candidate" },
-  { "title": "SOPs", "url": "knowledge-base/sops/index.html", "keywords": "sop standard operating procedure process" },
-  { "title": "Process Documentation", "url": "knowledge-base/index.html", "keywords": "process documentation how-to" },
-  { "title": "Policies", "url": "knowledge-base/index.html", "keywords": "policy compliance rules" },
-  { "title": "Best Practices", "url": "knowledge-base/index.html", "keywords": "best practices guidelines tips" },
-  { "title": "FAQs", "url": "knowledge-base/index.html", "keywords": "faq questions answers" },
-  { "title": "Active Projects", "url": "projects/index.html", "keywords": "project active ongoing" },
-  { "title": "Completed Projects", "url": "projects/index.html", "keywords": "project completed done shipped" },
-  { "title": "Templates", "url": "resources/index.html", "keywords": "template starter file" },
-  { "title": "Leadership Meetings", "url": "meetings/index.html", "keywords": "leadership meeting exec" },
-  { "title": "Team Meetings", "url": "meetings/index.html", "keywords": "team meeting standup sync" },
-  { "title": "Meeting Minutes", "url": "meetings/index.html", "keywords": "minutes notes meeting" },
-  { "title": "Action Items", "url": "meetings/index.html", "keywords": "action items todo follow-up" },
-  { "title": "Forms", "url": "resources/index.html", "keywords": "form request" },
-  { "title": "Checklists", "url": "resources/index.html", "keywords": "checklist steps" },
-  { "title": "Brand Assets", "url": "resources/index.html", "keywords": "brand logo assets design" },
-  { "title": "Shared Documents", "url": "resources/index.html", "keywords": "shared document editable" },
-  { "title": "Internal Applications", "url": "tools/index.html", "keywords": "tool application app internal" },
-  { "title": "User Guides", "url": "tools/index.html", "keywords": "user guide how-to instructions" },
-  { "title": "System Documentation", "url": "tools/index.html", "keywords": "system documentation architecture" },
-  { "title": "Executive Team space", "url": "team-spaces/executive/index.html", "keywords": "executive leadership team" },
-  { "title": "Product Team space", "url": "team-spaces/product/index.html", "keywords": "product team" },
-  { "title": "Engineering Team space", "url": "team-spaces/engineering/index.html", "keywords": "engineering team" }
+  {
+    "title": "New Hire Onboarding & Equipment Setup SOP",
+    "url": "knowledge-base/sops/new-hire-onboarding-sop.html",
+    "keywords": "onboarding new hire equipment setup sop hr"
+  },
+  {
+    "title": "Hiring & Recruitment SOP",
+    "url": "knowledge-base/sops/hiring-recruitment-sop.html",
+    "keywords": "hiring recruitment interview sop candidate"
+  },
+  {
+    "title": "SOPs",
+    "url": "knowledge-base/sops/index.html",
+    "keywords": "sop standard operating procedure process"
+  },
+  {
+    "title": "Process Documentation",
+    "url": "knowledge-base/index.html",
+    "keywords": "process documentation how-to"
+  },
+  {
+    "title": "Policies",
+    "url": "knowledge-base/index.html",
+    "keywords": "policy compliance rules"
+  },
+  {
+    "title": "Best Practices",
+    "url": "knowledge-base/index.html",
+    "keywords": "best practices guidelines tips"
+  },
+  {
+    "title": "FAQs",
+    "url": "knowledge-base/index.html",
+    "keywords": "faq questions answers"
+  },
+  {
+    "title": "Active Projects",
+    "url": "projects/index.html",
+    "keywords": "project active ongoing"
+  },
+  {
+    "title": "Completed Projects",
+    "url": "projects/index.html",
+    "keywords": "project completed done shipped"
+  },
+  {
+    "title": "Templates",
+    "url": "resources/index.html",
+    "keywords": "template starter file"
+  },
+  {
+    "title": "Leadership Meetings",
+    "url": "meetings/index.html",
+    "keywords": "leadership meeting exec"
+  },
+  {
+    "title": "Team Meetings",
+    "url": "meetings/index.html",
+    "keywords": "team meeting standup sync"
+  },
+  {
+    "title": "Meeting Minutes",
+    "url": "meetings/index.html",
+    "keywords": "minutes notes meeting"
+  },
+  {
+    "title": "Action Items",
+    "url": "meetings/index.html",
+    "keywords": "action items todo follow-up"
+  },
+  {
+    "title": "Forms",
+    "url": "resources/index.html",
+    "keywords": "form request"
+  },
+  {
+    "title": "Checklists",
+    "url": "resources/index.html",
+    "keywords": "checklist steps"
+  },
+  {
+    "title": "Brand Assets",
+    "url": "resources/index.html",
+    "keywords": "brand logo assets design"
+  },
+  {
+    "title": "Shared Documents",
+    "url": "resources/index.html",
+    "keywords": "shared document editable"
+  },
+  {
+    "title": "Internal Applications",
+    "url": "tools/index.html",
+    "keywords": "tool application app internal"
+  },
+  {
+    "title": "User Guides",
+    "url": "tools/index.html",
+    "keywords": "user guide how-to instructions"
+  },
+  {
+    "title": "System Documentation",
+    "url": "tools/index.html",
+    "keywords": "system documentation architecture"
+  },
+  {
+    "title": "Executive Team space",
+    "url": "team-spaces/executive/index.html",
+    "keywords": "executive leadership team"
+  },
+  {
+    "title": "Product Team space",
+    "url": "team-spaces/product/index.html",
+    "keywords": "product team"
+  },
+  {
+    "title": "Engineering Team space",
+    "url": "team-spaces/engineering/index.html",
+    "keywords": "engineering team"
+  },
+  {
+    "title": "Policies",
+    "url": "knowledge-base/policies/index.html",
+    "keywords": "policy handbook conduct nda privacy security harassment acceptable use"
+  },
+  {
+    "title": "Best Practices",
+    "url": "knowledge-base/best-practices/index.html",
+    "keywords": "best practices meeting etiquette slack email documentation writing"
+  },
+  {
+    "title": "FAQs",
+    "url": "knowledge-base/faqs/index.html",
+    "keywords": "faq questions new hire it equipment contact tool access"
+  },
+  {
+    "title": "Process Documentation",
+    "url": "knowledge-base/process-documentation/index.html",
+    "keywords": "process documentation"
+  },
+  {
+    "title": "Project Templates",
+    "url": "projects/templates/index.html",
+    "keywords": "project brief charter prd retrospective status report risk register template"
+  },
+  {
+    "title": "One-on-One Agendas",
+    "url": "meetings/one-on-one-agendas/index.html",
+    "keywords": "1:1 one on one agenda manager template"
+  },
+  {
+    "title": "Resource Templates",
+    "url": "resources/templates/index.html",
+    "keywords": "sop template meeting notes email deck proposal template"
+  },
+  {
+    "title": "Forms",
+    "url": "resources/forms/index.html",
+    "keywords": "form new hire directory expense reimbursement pto equipment it support exit interview"
+  },
+  {
+    "title": "Checklists",
+    "url": "resources/checklists/index.html",
+    "keywords": "checklist onboarding offboarding equipment setup event launch security access review"
+  },
+  {
+    "title": "Offboarding SOP",
+    "url": "knowledge-base/sops/offboarding-sop.html",
+    "keywords": "offboarding exit departure termination sop"
+  },
+  {
+    "title": "IT/System Access Request SOP",
+    "url": "knowledge-base/sops/it-system-access-request-sop.html",
+    "keywords": "it access request sop system tool"
+  },
+  {
+    "title": "PTO / Leave Request SOP",
+    "url": "knowledge-base/sops/pto-leave-request-sop.html",
+    "keywords": "pto leave request time off sop"
+  },
+  {
+    "title": "Performance Review & Feedback Cycle SOP",
+    "url": "knowledge-base/sops/performance-review-feedback-cycle-sop.html",
+    "keywords": "performance review feedback cycle sop"
+  },
+  {
+    "title": "Code of Conduct",
+    "url": "knowledge-base/policies/code-of-conduct.html",
+    "keywords": "code of conduct behavior policy"
+  },
+  {
+    "title": "Remote Work / Work-From-Home Policy",
+    "url": "knowledge-base/policies/remote-work-wfh-policy.html",
+    "keywords": "remote work wfh policy"
+  },
+  {
+    "title": "Equal Opportunity / Anti-Harassment Policy",
+    "url": "knowledge-base/policies/equal-opportunity-anti-harassment-policy.html",
+    "keywords": "equal opportunity anti harassment policy"
+  },
+  {
+    "title": "Acceptable Use Policy",
+    "url": "knowledge-base/policies/acceptable-use-policy.html",
+    "keywords": "acceptable use policy devices software accounts"
+  },
+  {
+    "title": "Meeting Etiquette",
+    "url": "knowledge-base/best-practices/meeting-etiquette.html",
+    "keywords": "meeting etiquette agenda note taking follow up"
+  },
+  {
+    "title": "Slack / Email Communication Norms",
+    "url": "knowledge-base/best-practices/slack-email-communication-norms.html",
+    "keywords": "slack email communication norms"
+  },
+  {
+    "title": "Internal Documentation Writing Guidelines",
+    "url": "knowledge-base/best-practices/internal-documentation-writing-guidelines.html",
+    "keywords": "documentation writing guidelines"
+  },
+  {
+    "title": "IT & Equipment FAQ",
+    "url": "knowledge-base/faqs/it-equipment-faq.html",
+    "keywords": "it equipment faq"
+  },
+  {
+    "title": "New Hire FAQ",
+    "url": "knowledge-base/faqs/new-hire-faq.html",
+    "keywords": "new hire faq first week payroll benefits"
+  }
 ]
