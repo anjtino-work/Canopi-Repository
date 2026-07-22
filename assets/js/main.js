@@ -8,6 +8,15 @@
 // version would provide (especially don't use this pattern for anything
 // sensitive like 1-on-1 notes — those are intentionally not part of this
 // GitHub version at all).
+//
+// PATH NOTE: GitHub Pages project sites are served from a subpath
+// (e.g. https://user.github.io/repo-name/), so every page carries a
+// data-root attribute on <body> set to the correct "../" chain back to
+// the site root. All fetches below are resolved against that.
+
+function getRoot() {
+  return document.body.getAttribute("data-root") || "";
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   includePartials();
@@ -17,11 +26,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function includePartials() {
+  var root = getRoot();
   document.querySelectorAll("[data-include]").forEach(function (el) {
-    var url = el.getAttribute("data-include");
-    fetch(url)
+    var relPath = el.getAttribute("data-include"); // e.g. "partials/header.html"
+    fetch(root + relPath)
       .then(function (r) { return r.text(); })
-      .then(function (html) { el.outerHTML = html; })
+      .then(function (html) {
+        html = html.split("{{ROOT}}").join(root);
+        el.outerHTML = html;
+      })
       .catch(function () { /* fails silently on file:// — serve over http(s) */ });
   });
 }
@@ -59,8 +72,9 @@ function wireSearch() {
   var input = document.getElementById("globalSearch");
   var results = document.getElementById("searchResults");
   if (!input || !results) return;
+  var root = getRoot();
 
-  fetch("/assets/js/search-index.json")
+  fetch(root + "assets/js/search-index.json")
     .then(function (r) { return r.json(); })
     .then(function (index) {
       input.addEventListener("input", function () {
@@ -73,7 +87,7 @@ function wireSearch() {
           results.innerHTML = '<div class="result">No matches</div>';
         } else {
           results.innerHTML = matches.map(function (m) {
-            return '<div class="result"><a href="' + m.url + '">' + m.title + "</a></div>";
+            return '<div class="result"><a href="' + root + m.url + '">' + m.title + "</a></div>";
           }).join("");
         }
         results.style.display = "block";

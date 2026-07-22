@@ -1,24 +1,60 @@
-[
-  { "title": "SOPs", "url": "/knowledge-base/sops/index.html", "keywords": "sop standard operating procedure process" },
-  { "title": "Process Documentation", "url": "/knowledge-base/index.html", "keywords": "process documentation how-to" },
-  { "title": "Policies", "url": "/knowledge-base/index.html", "keywords": "policy compliance rules" },
-  { "title": "Best Practices", "url": "/knowledge-base/index.html", "keywords": "best practices guidelines tips" },
-  { "title": "FAQs", "url": "/knowledge-base/index.html", "keywords": "faq questions answers" },
-  { "title": "Active Projects", "url": "/projects/index.html", "keywords": "project active ongoing" },
-  { "title": "Completed Projects", "url": "/projects/index.html", "keywords": "project completed done shipped" },
-  { "title": "Templates", "url": "/resources/index.html", "keywords": "template starter file" },
-  { "title": "Leadership Meetings", "url": "/meetings/index.html", "keywords": "leadership meeting exec" },
-  { "title": "Team Meetings", "url": "/meetings/index.html", "keywords": "team meeting standup sync" },
-  { "title": "Meeting Minutes", "url": "/meetings/index.html", "keywords": "minutes notes meeting" },
-  { "title": "Action Items", "url": "/meetings/index.html", "keywords": "action items todo follow-up" },
-  { "title": "Forms", "url": "/resources/index.html", "keywords": "form request" },
-  { "title": "Checklists", "url": "/resources/index.html", "keywords": "checklist steps" },
-  { "title": "Brand Assets", "url": "/resources/index.html", "keywords": "brand logo assets design" },
-  { "title": "Shared Documents", "url": "/resources/index.html", "keywords": "shared document editable" },
-  { "title": "Internal Applications", "url": "/tools/index.html", "keywords": "tool application app internal" },
-  { "title": "User Guides", "url": "/tools/index.html", "keywords": "user guide how-to instructions" },
-  { "title": "System Documentation", "url": "/tools/index.html", "keywords": "system documentation architecture" },
-  { "title": "Executive Team space", "url": "/team-spaces/executive/index.html", "keywords": "executive leadership team" },
-  { "title": "Product Team space", "url": "/team-spaces/product/index.html", "keywords": "product team" },
-  { "title": "Engineering Team space", "url": "/team-spaces/engineering/index.html", "keywords": "engineering team" }
-]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home | Team repository</title>
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body data-root="">
+<div data-include="partials/header.html"></div>
+
+<div class="container">
+  <p style="font-size:18px; margin:24px 0 0;">Good morning.</p>
+
+  <div class="search-wrap">
+    <span class="search-icon">&#128269;</span>
+    <input type="text" id="globalSearch" placeholder="Search SOPs, projects, meeting notes, resources...">
+    <div id="searchResults"></div>
+  </div>
+
+  <p class="section-label">Quick access</p>
+  <div class="card-grid">
+    <a class="card" href="knowledge-base/index.html"><span class="icon">&#128220;</span>SOPs</a>
+    <a class="card" href="projects/index.html"><span class="icon">&#128188;</span>Projects</a>
+    <a class="card" href="meetings/index.html"><span class="icon">&#128221;</span>Meeting notes</a>
+    <a class="card" href="team-spaces/index.html"><span class="icon">&#128101;</span>Team spaces</a>
+    <a class="card" href="resources/index.html"><span class="icon">&#128193;</span>Resources</a>
+    <a class="card" href="tools/index.html"><span class="icon">&#128295;</span>Company tools</a>
+  </div>
+
+  <div class="two-col" style="margin-top:24px;">
+    <div>
+      <p class="section-label">Recent updates</p>
+      <div class="list-box">
+        <div class="list-row"><span>Add your first update here</span><span class="muted">&mdash;</span></div>
+      </div>
+
+      <p class="section-label">Company announcements</p>
+      <div class="list-box">
+        <div class="list-row"><span>Add an announcement here</span></div>
+      </div>
+    </div>
+
+    <div>
+      <p class="section-label">Recently viewed</p>
+      <div class="list-box" id="recentlyViewed">
+        <div class="list-row"><span>Nothing viewed yet</span></div>
+      </div>
+
+      <p class="section-label">Favorite resources</p>
+      <div class="list-box">
+        <div class="list-row"><span>No favorites yet</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div data-include="partials/footer.html"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
