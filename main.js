@@ -1,0 +1,170 @@
+:root {
+  --purple-900: #2E1A47;
+  --purple-700: #4A2E70;
+  --purple-500: #5B3E8A;
+  --purple-100: #EEEDFE;
+  --purple-050: #F7F4FB;
+  --lavender-text: #8A7FA8;
+  --white: #FFFFFF;
+  --border: #E5E0F0;
+  --text: #2E1A47;
+  --text-muted: #6B6478;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--text);
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a { color: var(--purple-500); text-decoration: none; }
+a:hover { color: var(--purple-700); }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Header / nav */
+header.site-header {
+  background: var(--purple-900);
+  color: var(--white);
+}
+header.site-header .bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+header.site-header .brand {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--white);
+}
+header.site-header nav a {
+  color: #D8CDEA;
+  margin-left: 20px;
+  font-size: 13px;
+}
+header.site-header nav a:hover { color: var(--white); }
+
+/* Search */
+.search-wrap { position: relative; margin: 24px 0; }
+.search-wrap input {
+  width: 100%;
+  padding: 18px 18px 18px 44px;
+  font-size: 15px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--purple-050);
+  color: var(--text);
+}
+.search-icon {
+  position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+  color: var(--lavender-text);
+}
+#searchResults {
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  margin-top: 8px;
+  overflow: hidden;
+  display: none;
+}
+#searchResults .result {
+  padding: 10px 14px;
+  font-size: 13px;
+  border-bottom: 0.5px solid #f0edf6;
+}
+#searchResults .result:last-child { border-bottom: none; }
+
+/* Section labels */
+.section-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  margin: 24px 0 10px;
+}
+
+/* Cards grid (Quick Access, category tiles) */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 24px 12px;
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text);
+}
+.card:hover { border-color: var(--purple-500); color: var(--text); }
+.card .icon { font-size: 24px; color: var(--purple-500); }
+
+/* List box (recent updates, announcements, etc.) */
+.list-box {
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.list-row {
+  padding: 10px 14px;
+  font-size: 13px;
+  border-bottom: 0.5px solid #f0edf6;
+  display: flex;
+  justify-content: space-between;
+}
+.list-row:last-child { border-bottom: none; }
+.list-row .muted { color: var(--lavender-text); font-size: 12px; }
+
+/* Two-column layout */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 700px) {
+  .two-col { grid-template-columns: 1fr; }
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 16px 0;
+}
+.breadcrumb a { color: var(--text-muted); }
+
+/* Content page basics */
+h1 { font-size: 24px; font-weight: 600; margin: 0 0 8px; }
+h2 { font-size: 18px; font-weight: 600; margin: 24px 0 8px; }
+p.lead { color: var(--text-muted); margin-bottom: 24px; }
+
+footer.site-footer {
+  background: var(--purple-900);
+  color: var(--lavender-text);
+  margin-top: 60px;
+  padding: 20px 0;
+  font-size: 12px;
+}
+footer.site-footer a { color: var(--white); }
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.badge-published { background: #E1F5EE; color: #085041; }
+.badge-draft { background: var(--purple-100); color: var(--purple-700); }
+.badge-archived { background: #F1EFE8; color: #444441; }

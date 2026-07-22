@@ -1,0 +1,82 @@
+// Loads shared header/footer partials, powers client-side search,
+// and tracks Recently Viewed / Favorites in localStorage.
+//
+// NOTE: localStorage is per-browser, not per-person across devices — this
+// is a static site with no backend, so there's no real user accounts or
+// server-side data. Good enough for personal convenience; not a substitute
+// for the private, per-user security a future Power Pages/Dataverse
+// version would provide (especially don't use this pattern for anything
+// sensitive like 1-on-1 notes — those are intentionally not part of this
+// GitHub version at all).
+
+document.addEventListener("DOMContentLoaded", function () {
+  includePartials();
+  recordCurrentPageView();
+  renderRecentlyViewed();
+  wireSearch();
+});
+
+function includePartials() {
+  document.querySelectorAll("[data-include]").forEach(function (el) {
+    var url = el.getAttribute("data-include");
+    fetch(url)
+      .then(function (r) { return r.text(); })
+      .then(function (html) { el.outerHTML = html; })
+      .catch(function () { /* fails silently on file:// — serve over http(s) */ });
+  });
+}
+
+// ---- Recently viewed (localStorage) ----
+var RV_KEY = "repo_recently_viewed";
+var RV_MAX = 6;
+
+function recordCurrentPageView() {
+  var title = document.title.replace(" | Team repository", "");
+  var url = window.location.pathname;
+  if (url.endsWith("/index.html") && url === "/index.html") return; // don't log the homepage itself
+  var items = getRecentlyViewed().filter(function (i) { return i.url !== url; });
+  items.unshift({ title: title, url: url });
+  localStorage.setItem(RV_KEY, JSON.stringify(items.slice(0, RV_MAX)));
+}
+
+function getRecentlyViewed() {
+  try { return JSON.parse(localStorage.getItem(RV_KEY)) || []; }
+  catch (e) { return []; }
+}
+
+function renderRecentlyViewed() {
+  var container = document.getElementById("recentlyViewed");
+  if (!container) return;
+  var items = getRecentlyViewed();
+  if (items.length === 0) return; // leave default placeholder message
+  container.innerHTML = items.map(function (i) {
+    return '<div class="list-row"><a href="' + i.url + '">' + i.title + "</a></div>";
+  }).join("");
+}
+
+// ---- Client-side search ----
+function wireSearch() {
+  var input = document.getElementById("globalSearch");
+  var results = document.getElementById("searchResults");
+  if (!input || !results) return;
+
+  fetch("/assets/js/search-index.json")
+    .then(function (r) { return r.json(); })
+    .then(function (index) {
+      input.addEventListener("input", function () {
+        var q = input.value.trim().toLowerCase();
+        if (!q) { results.style.display = "none"; results.innerHTML = ""; return; }
+        var matches = index.filter(function (item) {
+          return (item.title + " " + item.keywords).toLowerCase().indexOf(q) !== -1;
+        });
+        if (matches.length === 0) {
+          results.innerHTML = '<div class="result">No matches</div>';
+        } else {
+          results.innerHTML = matches.map(function (m) {
+            return '<div class="result"><a href="' + m.url + '">' + m.title + "</a></div>";
+          }).join("");
+        }
+        results.style.display = "block";
+      });
+    });
+}
