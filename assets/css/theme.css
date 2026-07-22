@@ -41,6 +41,14 @@ header.site-header .brand {
   font-weight: 600;
   font-size: 16px;
   color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header.site-header .brand-logo {
+  height: 28px;
+  width: auto;
+  display: block;
 }
 header.site-header nav a {
   color: #D8CDEA;

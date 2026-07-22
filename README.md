@@ -32,6 +32,15 @@ assets/js/search-index.json Manually maintained list of pages for search — add
 
 There's no CMS — add a new page by copying an existing one in the relevant folder (e.g. copy `knowledge-base/sops/example-sop.html` for a new SOP), edit the text, and add a link to it from that section's `index.html` and to `assets/js/search-index.json`.
 
+## Adding PDF or Word files
+
+There's no live upload button on the site — a static site with no backend can't accept file uploads from visitors. Instead, files get added on the GitHub side and then linked to:
+
+1. Upload the file into the relevant `files/` folder (e.g. `resources/files/`, `knowledge-base/sops/files/`) — either via GitHub's web UI ("Add file > Upload files", which handles PDF/DOCX fine) or by dragging it into that folder in a Codespace.
+2. Add a link to it from the relevant page: `<a href="files/your-file.pdf">Your File</a>`.
+3. GitHub Pages serves PDFs and Word docs as static files — PDFs typically preview in-browser, Word docs download.
+
+
 ## What's deliberately NOT here
 
 - **1-on-1 meeting summaries.** These need real per-user privacy (an employee sees only their own; a manager sees only their direct reports') that a static site with no login and no backend cannot provide. Don't add these here — keep them out until there's a real backend (e.g. the Power Pages/Dataverse version) that can enforce that access control properly.
