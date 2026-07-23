@@ -145,7 +145,7 @@
     "keywords": "project brief charter prd retrospective status report risk register template"
   },
   {
-    "title": "One-on-One Agendas",
+    "title": "One-on-One Minutes",
     "url": "meetings/one-on-one-agendas/index.html",
     "keywords": "1:1 one on one agenda manager template"
   },
@@ -383,5 +383,20 @@
     "title": "Leadership Meetings",
     "url": "meetings/leadership/index.html",
     "keywords": "leadership meetings exec sync okr quarterly budget headcount all-hands"
+  },
+  {
+    "title": "Team Meetings",
+    "url": "meetings/team/index.html",
+    "keywords": "team meetings engineering standup sprint product sync cross-team weekly"
+  },
+  {
+    "title": "Recurring 1:1 Notes",
+    "url": "meetings/one-on-one-agendas/recurring/index.html",
+    "keywords": "recurring 1:1 one on one notes manager employee private"
+  },
+  {
+    "title": "Manager 1:1 Minutes Template",
+    "url": "meetings/one-on-one-agendas/index.html",
+    "keywords": "manager 1:1 one on one minutes template"
   }
 ]

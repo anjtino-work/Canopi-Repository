@@ -43,7 +43,7 @@ There's no live upload button on the site — a static site with no backend can'
 
 ## What's deliberately NOT here
 
-- **1-on-1 meeting summaries.** These need real per-user privacy (an employee sees only their own; a manager sees only their direct reports') that a static site with no login and no backend cannot provide. Don't add these here — keep them out until there's a real backend (e.g. the Power Pages/Dataverse version) that can enforce that access control properly.
+- **1-on-1 meeting summaries.** These need real per-user privacy. The site now links to individual SharePoint folders (one per manager/employee pair, under Meetings &gt; One-on-One Agendas &gt; Recurring 1:1 Notes), each shared only with those two specific people via SharePoint's sharing settings &mdash; not "anyone with the link." This was a deliberate, accepted tradeoff: the folder *tiles* are visible on a public page (revealing who has 1:1s with whom), even though the *contents* are properly access-controlled. Keep this in mind if that tradeoff ever needs revisiting, and remember to update sharing whenever a manager or employee changes.
 - **Real editable shared documents.** This site can link OUT to documents that live in Google Drive/OneDrive/SharePoint, but it can't host live co-editable files itself. Put links in `resources/index.html` pointing to wherever those documents actually live.
 - **Per-person accounts, permissions, or private content of any kind.** Everything in this repo is visible to anyone with the URL, since GitHub Pages has no login layer by default. Don't put anything here that shouldn't be visible to the whole company (or the public, if the repo is public).
 
