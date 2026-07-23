@@ -10,18 +10,18 @@
 <div class="container">
   <div class="breadcrumb"><a href="../../index.html">Home</a> &raquo; <a href="../../projects/index.html">Projects</a> &raquo; Active Projects</div>
   <h1>Active Projects</h1>
-  <p class="lead">Every in-flight project at a glance. Click through to a project for its charter, roadmap items, sprint board link, and risk log.</p>
-  <table class="doc-table">
-    <tr><th>Project</th><th>Owner</th><th>Status</th><th>Target Date</th></tr>
-    <tr>
-      <td><a href="example-project-repository-site-rollout.html">Example Project: Repository Site Rollout</a></td>
-      <td>Angela Tino</td>
-      <td><span class="badge badge-on-track">On Track</span></td>
-      <td>TBD</td>
-    </tr>
-  </table>
+  <p class="lead">Every in-flight project at a glance. This table is live &mdash; it pulls directly from the shared Excel file, so anyone with edit access to that spreadsheet can update it without touching this site.</p>
+
+  <div style="border:0.5px solid var(--border); border-radius:8px; overflow:hidden; max-width:700px;">
+    <iframe width="700" height="658" frameborder="0" scrolling="no" style="max-width:100%;"
+      src="https://canopi407-my.sharepoint.com/personal/angela_canopi_work/_layouts/15/Doc.aspx?sourcedoc={bc97f609-beff-425e-8611-8f5856bbd65f}&action=embedview&wdAllowInteractivity=False&Item='Project%20Tracker'!A2%3AJ28&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0"></iframe>
+  </div>
+
   <p style="font-size:13px; color:var(--text-muted); margin-top:12px;">
-    This is a template row showing the expected structure &mdash; replace it with real active projects as they're added.
+    To update: open the <strong>Project Tracker</strong> file in Excel (OneDrive) and edit directly &mdash; changes appear here automatically, no site edits needed.
+    To link a project to its own detail page (charter, roadmap, risk log), add a hyperlink in that row's cell pointing to the full page URL, e.g.
+    <code>https://anjtino-work.github.io/Canopi-Repository/projects/active/example-project-repository-site-rollout.html</code>
+    &mdash; it needs to be the full address since the link lives inside the spreadsheet, not the site's code.
   </p>
 </div>
 <div data-include="partials/footer.html"></div>
