@@ -228,5 +228,25 @@
     "title": "New Hire FAQ",
     "url": "knowledge-base/faqs/new-hire-faq.html",
     "keywords": "new hire faq first week payroll benefits"
+  },
+  {
+    "title": "Expense Reimbursement SOP",
+    "url": "knowledge-base/sops/expense-reimbursement-sop.html",
+    "keywords": "expense reimbursement sop coming soon"
+  },
+  {
+    "title": "Vendor Onboarding & Contract Approval SOP",
+    "url": "knowledge-base/sops/vendor-onboarding-contract-approval-sop.html",
+    "keywords": "vendor onboarding contract approval sop coming soon"
+  },
+  {
+    "title": "Incident Response / Production Escalation SOP",
+    "url": "knowledge-base/sops/incident-response-production-escalation-sop.html",
+    "keywords": "incident response production escalation sop coming soon"
+  },
+  {
+    "title": "Customer Escalation Handling SOP",
+    "url": "knowledge-base/sops/customer-escalation-handling-sop.html",
+    "keywords": "customer escalation handling sop coming soon"
   }
 ]
