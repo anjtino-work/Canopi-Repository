@@ -378,5 +378,10 @@
     "title": "Documentation (Projects)",
     "url": "projects/documentation/index.html",
     "keywords": "adr architecture decision record technical design doc raci requirements acceptance criteria"
+  },
+  {
+    "title": "Leadership Meetings",
+    "url": "meetings/leadership/index.html",
+    "keywords": "leadership meetings exec sync okr quarterly budget headcount all-hands"
   }
 ]
