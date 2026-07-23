@@ -176,6 +176,9 @@ footer.site-footer a { color: var(--white); }
 .badge-published { background: #E1F5EE; color: #085041; }
 .badge-draft { background: var(--purple-100); color: var(--purple-700); }
 .badge-archived { background: #F1EFE8; color: #444441; }
+.badge-on-track { background: #E1F5EE; color: #085041; }
+.badge-at-risk { background: #FDECC8; color: #8a5a00; }
+.badge-blocked { background: #FBE1E1; color: #8a1f1f; }
 
 /* Content tables (RACI matrices, exceptions) */
 table.doc-table {
