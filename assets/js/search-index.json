@@ -318,5 +318,25 @@
     "title": "Confidentiality & NDA Policy",
     "url": "knowledge-base/policies/confidentiality-nda-policy.html",
     "keywords": "confidentiality nda non-disclosure policy"
+  },
+  {
+    "title": "Engineering Coding Standards & Style Guide",
+    "url": "knowledge-base/best-practices/engineering-coding-standards-style-guide.html",
+    "keywords": "coding standards style guide engineering coming soon"
+  },
+  {
+    "title": "Git Branching, Commit Message, and PR Conventions",
+    "url": "knowledge-base/best-practices/git-branching-commit-pr-conventions.html",
+    "keywords": "git branching commit message pr conventions coming soon"
+  },
+  {
+    "title": "Writing Effective PRDs / Product Specs",
+    "url": "knowledge-base/best-practices/writing-effective-prds-product-specs.html",
+    "keywords": "prd product spec writing coming soon"
+  },
+  {
+    "title": "Design System Usage Guidelines",
+    "url": "knowledge-base/best-practices/design-system-usage-guidelines.html",
+    "keywords": "design system usage guidelines coming soon"
   }
 ]
