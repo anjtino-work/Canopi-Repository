@@ -343,5 +343,35 @@
     "title": "Active Projects",
     "url": "projects/active/index.html",
     "keywords": "active projects live status owner target date"
+  },
+  {
+    "title": "Completed Projects",
+    "url": "projects/completed/index.html",
+    "keywords": "completed projects archive retrospective post-mortem lessons learned case study"
+  },
+  {
+    "title": "PRD (Product Requirements Doc) Template",
+    "url": "projects/templates/index.html",
+    "keywords": "prd product requirements doc template"
+  },
+  {
+    "title": "Project Brief / Charter Template",
+    "url": "projects/templates/index.html",
+    "keywords": "project brief charter template"
+  },
+  {
+    "title": "Retrospective Template",
+    "url": "projects/templates/index.html",
+    "keywords": "retrospective template"
+  },
+  {
+    "title": "Risk Register Template",
+    "url": "projects/templates/index.html",
+    "keywords": "risk register template"
+  },
+  {
+    "title": "Status Report Template",
+    "url": "projects/templates/index.html",
+    "keywords": "status report template"
   }
 ]
